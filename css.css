@@ -2,7 +2,7 @@ body {
 	margin: 0;
 }
 
-#puppy{
+#hand{
 position:absolute;
 }
 
@@ -19,7 +19,6 @@ position:absolute;
   -o-background-size: cover;
   background-size: cover;
 }
-
 
 @charset "UTF-8";
 
