@@ -23,14 +23,24 @@ $(document).ready(function(){
 		$('body').append($('<div class="bg"></div>'));
 		$('body').append(div);
 		console.log(div);
-		div.append($("<img id='paw' class='animated bounceInLeft' src='images/catpaw.png'/>"));
+		div.append($("<img id='paw' class='animated bounceInLeft' src='../images/catpaw.png'/>"));
 		
-		addSound();
 		animatePaw();
+		addSound();
 		ouch();
 		reset();
 	})
 
+
+	function menu(){
+		$("body").keypress(function (e) {
+  if (e.which == 13) {
+  	window.location.href = '../index.html';
+  	}
+  })
+}
+
+menu();
 
 	function animatePaw(){
 		$("#paw").addClass('animated bounceOutLeft');
@@ -45,7 +55,7 @@ $(document).ready(function(){
 	function addSound(){
 		//Audio
 		var smackEl = document.createElement('audio');
-		smackEl.setAttribute('src', 'Smack.mp3');
+		smackEl.setAttribute('src', '../Smack.mp3');
 		smackEl.setAttribute('autoplay', 'autoplay');
 	 //smackEl.load()
 	 $.get();
